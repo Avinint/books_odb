@@ -1,0 +1,10 @@
+<div class="jumbotron mt-5">
+    <div class="container">
+        <H1 class="display-4"><%= t "home.index.app_name" %></H1>
+        <p class="lead"><%= t "home.index.welcome" %></p>
+    </div>
+</div>
+<%= link_to image_tag("en.png", alt:"EN", class: "locale-flag"), url_for(only_path: true, locale: "en") %>
+<%= link_to image_tag("fr.png", alt:"FR", class: "locale-flag"), url_for(only_path: true, locale: "fr") %>
+<%= link_to t("home.index.books_path"), books_path %>
+

@@ -1,0 +1,35 @@
+---
+fr:
+  books:
+    created: Livre créé
+    destroyed: Livre supprimé
+    edit:
+      header: Modifier un livre
+    index:
+      author: Auteur
+      delete: Supprimer
+      edit: Editer
+      header: Tous les livres
+      new: Ajouter
+      published_at: Publié le
+      show: Voir
+      title: Titre
+      summary: Résumé
+    new:
+      header: Créer un nouveau livre
+    updated: Livre mis à jour
+  home:
+    index:
+      app_name: Base de données Livres ouverts
+      books_path: Tous les livres
+      welcome: Pas grand chose pour l'instant, mais on y travaille !
+  views:
+    pagination:
+      first: "&laquo; Premier"
+      last: "Dernier &raquo;"
+      previous: "&lsaquo; Préc"
+      next: "Suivant &rsaquo;"
+      truncate: "&hellip;"
+  helpers:
+    books:
+      written_by: "écrit par %{editor_name}"

@@ -1,0 +1,38 @@
+<% if @book.errors.any? %>
+<h2> <%= pluralize(@book.errors.count, "error") %> prevented that book from being saved:</h2>
+<ul>
+<% @book.errors.full_messages.each do |msg| %>
+    <li><%= msg %> </li>
+<% end %>
+</ul>
+<% end %>
+<%= form_with model: @book, local: true do |form| %>
+<p>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+</p>
+<p>
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+</p>
+<p>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+</p>
+<p>
+    <%= form.label :pages_count %>
+    <%= form.number_field :pages_count %>
+</p>
+<p>
+    <%= form.label :published_at %>
+    <%= form.date_field :published_at %>
+</p>
+<p>
+    <%= form.label :editor_name %>
+    <%= form.text_field :editor_name, value: @book.editor_name || session[:editor_name] %>
+</p>
+<p>
+    <%= form.submit %>
+</p>
+</p>
+<% end %>   

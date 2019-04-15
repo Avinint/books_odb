@@ -1,0 +1,15 @@
+// @import "bootstrap-custom";
+@import "**/*";
+
+ .field_with_errors input {
+     border: solid red 1px;
+     background-color: mistyrose;
+ }
+ .notice {
+     background-color: lightgreen;
+     font-style: italic;
+ }
+ .alert {
+     background-color: mistyrose;
+     font-style: italic;
+ }

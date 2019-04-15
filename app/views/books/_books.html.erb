@@ -1,0 +1,15 @@
+<table>
+    <tr>
+        <th><%= t "books.index.title" %></th>
+        <th><%= t "books.index.author" %></th>
+        <th><%= t "books.index.published_at" %></th>
+        <th><%= t "books.index.summary" %></th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    
+    <%= render @books.order(:title) %>
+</table>
+
+<%= paginate @books, remote: true %>

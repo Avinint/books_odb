@@ -1,0 +1,35 @@
+---
+en:
+  books:
+    created: Book created
+    destroyed: Book deleted
+    edit:
+      header: Edit a book
+    index:
+      author: Author
+      delete: Delete
+      edit: Edit
+      header: All the books
+      new: Add a book
+      published_at: Published at
+      show: Show
+      title: Title
+      summary: Summary
+    new:
+      header: Create a new book
+    updated: Book updated
+  home:
+    index:
+      app_name: Books Open Database
+      books_path: All the books
+      welcome: Not much for now, Hello world!
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
+  helpers:
+    books:
+      written_by: "written by %{editor_name}"

@@ -1,0 +1,9 @@
+<tr id="book_<%= book.id %>">
+    <td><%= book.title %></td>
+    <td><%= book.author %></td>
+    <td><%= book.published_at %></td>
+    <td><%= summary(book) %></td>
+    <td><%= link_to t("books.index.show"), book_path(book) %></td>
+    <td><%= link_to t("books.index.edit"), edit_book_path(book) %></td>
+    <td><%= link_to t("books.index.delete"), book_path(book), method: :delete, remote: true, data: { confirm: "Are you sure?"} %></td>
+</tr>
